@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/*GRID STYLE*/ 
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 15px; 
+}
+
+body > header{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+body > article {grid-column: intro;}
+body > aside {grid-column: 2;}
+body > section {grid-column: aside;}
+body > footer{grid-column: section;}
+
+/* Grid Style*/
+section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 15px;
+}
+
+body > * {
+  outline: 2px dashed cyan;
+}
+
+section > * {
+  outline: 2px dashed blue;
+}
+
+section > h1{
+  grid-area: 1/1/2/3;
+}
+
+/*footer*/
+
+.what-we-do { grid-area: what-we-do; }
+.footer {
+  display: grid; 
+  grid-template-columns: 10.7fr 0.1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    "email . ."; 
+  grid-area: footer; 
+}
+.email { grid-area: email; }

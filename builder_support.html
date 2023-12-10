@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact PC Support</title>
+    <link href="web_grid.css" rel="stylesheet" />
+    <link href="web_about.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <a target="_top" href="https://flamingtext.com/"><img src="https://blog.flamingtext.com/blog/2023/11/26/flamingtext_com_1700971185_829222024.png" border="0" alt="Logo Design by FlamingText.com" title="Logo Design by FlamingText.com"></a><br/>Logo Design by <a href="https://flamingtext.com/" >FlamingText.com</a>
+        <nav class="horizontalNavigation">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="web_step.html">Step By Step </a></li>
+             <li><a href="#">Compatible Components</a></li>
+             <li><a href="web_custom.html">Customization Options</a></li>
+             <li><a href="builder_support.html">Builder Support</a></li>
+          </ul>
+       </nav>
+    </header>
+    <aside>
+       <h1>Customer Support</h1>
+       <p>Looks like you need some help! Look no further, answer a few questions listed below so we can better assist you.</p>
+       <p>All info is confidential and not sold to third parties. </p>
+       <p>Required values are marked by an asterisk (*)</p>
+
+       <form id="survey" action="http://www.example.com/custompcbuilding101/buildersupport" method="post">
+         <fieldset id="custInfo">
+           <legend>Customer Information</legend>
+           
+           <div class="formRow">
+            <label for ="name">Name*</label>
+            <input name="custName" id="name" type="text" placeholder="first and last name" required/>
+           </div>
+        
+         <div class="formRow">
+            <label for="phone">Phone number</label>
+            <input name="custPhone" id="phone" type="tel" placeholder="123-456-7890" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+         </div>
+
+         <div class="formRow">
+            <label for="mail">E-mail*</label>
+            <input name="custEmail" id="mail" type="email" required/>
+         </div>
+
+         <div class="formRow">
+            <label for="info">What Support Do You Need?<br />(select all that apply)</label>
+            <select name="infoSrc" id="info" size="5" multiple>
+             <option value="mobo">Motherboard</option>
+             <option value="gpu">Graphics</option>
+             <option value="psu">Power Supply</option>
+             <option value="cpu">Central Processor</option>
+             <option value="other">Other</option>
+            </select>
+         </div>
+         
+         <label for="commBox">Tell us more about your issue (Please be as detailed as possible) </label>
+         <textarea name="custExp" id="commBox"></textarea>
+         
+        </fieldset>
+         
+         <div id="buttons">
+            <input type="submit" value="Submit My Answers" />
+            <input type="reset" value="Cancel" />
+         </div>
+        </form>
+
+        <footer>
+            <section id="contactInfo">
+                <p>Email us the PC Experts: <a href="mailto:contact@hitek-solutions.com"> contact@hitek-solutions.com</a></p>
+            </section>
+        </footer>
+     </aside>
+    
+   </body>       
+</html>
